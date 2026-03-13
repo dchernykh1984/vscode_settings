@@ -40,6 +40,8 @@
     // { "domain": "git.netcracker.com", "type": "GitLab" },
     { "domain": "github.com", "type": "GitHub" },
   ],
+  "gitlens.blame.format": "${author|12} ${agoOrDate|8-}",
+  "gitlens.blame.fontSize": 11,
   "launch": {
     "configurations": [],
     "compounds": [],
