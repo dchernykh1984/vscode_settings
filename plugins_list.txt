@@ -1,0 +1,8 @@
+Claude Code for VS Code
+Codex – OpenAI’s coding agent
+Continue - open-source AI code agent
+GitLens — Git supercharged
+IntelliJ IDEA Keybindings
+Prettier - Code formatter
+Python
+Ruff
