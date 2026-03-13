@@ -1,0 +1,86 @@
+name: Local Assistant
+version: 1.0.0
+schema: v1
+
+models:
+  # Online models. Requires payments. So use them primarily from claude plugin instead of through api with continue plugin
+  - name: DeepSeek Coder (API)
+    provider: deepseek
+    model: deepseek-coder
+    apiKey: https://platform.deepseek.com/api_keys
+    roles:
+      - chat
+      - edit
+      - apply
+      
+  - name: Claude Sonnet 4.5
+    provider: anthropic
+    model: claude-sonnet-4-5-20250929
+    apiKey: https://claude.ai/settings/claude-code
+    roles:
+      - chat
+      - edit
+      - apply
+
+  - name: Claude Sonnet 4
+    provider: anthropic
+    model: claude-sonnet-4-20250514
+    apiKey: https://claude.ai/settings/claude-code
+    roles:
+      - chat
+      - edit
+
+  - name: Claude Haiku 4.5
+    provider: anthropic
+    model: claude-haiku-4-5-20251001
+    apiKey: sk-ant-api03-... https://claude.ai/settings/claude-code
+    # roles: # uncomment, but this model requires payment
+    #   - autocomplete
+
+  # Ollama models.local
+  - name: Qwen 32B (Smart & Balanced)
+    provider: ollama
+    model: qwen2.5-coder:32b
+    roles:
+      - chat
+      - edit
+      - apply
+
+  - name: DeepSeek 33B (Very Smart)
+    provider: ollama
+    model: deepseek-coder:33b
+    roles:
+      - chat
+      - edit
+
+  - name: CodeLlama 13B (Fast)
+    provider: ollama
+    model: codellama:13b
+    roles:
+      - chat
+
+  - name: Qwen 7B (Very Fast)
+    provider: ollama
+    model: qwen2.5-coder:7b
+    roles: # offline model, bug it's quate slow, if you need faster one - use claude haiku 4.5
+      - autocomplete
+    autocompleteOptions:
+      multilineCompletions: always
+      debounceDelay: 100
+
+  - name: DeepSeek 6.7B (Quick)
+    provider: ollama
+    model: deepseek-coder:6.7b
+    roles:
+      - chat
+  - name: Qwen 14B (Good Balance)
+    provider: ollama
+    model: qwen2.5-coder:14b
+    roles:
+      - chat
+      - edit
+  - name: Nomic Embed Text
+    provider: ollama
+    model: nomic-embed-text
+    roles:
+      - embed
