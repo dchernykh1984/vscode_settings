@@ -1,0 +1,53 @@
+{
+  "workbench.startupEditor": "none",
+  "claudeCode.preferredLocation": "panel",
+  // "claudeCode.startOnLogin": true,
+  "workbench.sideBar.location": "left",
+  "continue.showChatPanel": true,
+  "continue.showChatOnStartup": true,
+  "claudeCode.environmentVariables": [],
+  "makefile.configureOnOpen": true,
+
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports": "explicit",
+    },
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[yml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "prettier.tabWidth": 2,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[helm]": {
+    "editor.formatOnSave": false,
+  },
+  "gitlens.remotes": [
+    // { "domain": "git.netcracker.com", "type": "GitLab" },
+    { "domain": "github.com", "type": "GitHub" },
+  ],
+  "launch": {
+    "configurations": [],
+    "compounds": [],
+  },
+  "continue.enableTabAutocomplete": true,
+  // "continue.enableTabAutocompleteInMarkdown": true,
+  // "continue.tabAutocompleteBehavior": "always",
+  // "continue.tabAutocompleteInMarkdownBehavior": "always",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+}
