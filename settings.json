@@ -5,51 +5,68 @@
   "workbench.sideBar.location": "left",
   "continue.showChatPanel": true,
   "continue.showChatOnStartup": true,
-  "claudeCode.environmentVariables": [],
-  "makefile.configureOnOpen": true,
-
   "[python]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
       "source.fixAll.ruff": "explicit",
-      "source.organizeImports": "explicit",
-    },
+      "source.organizeImports": "explicit"
+    }
   },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[yml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-  },
-  "prettier.tabWidth": 2,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[helm]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true
+  },
+  "[plaintext]": {
+    "editor.formatOnSave": false
   },
   "gitlens.remotes": [
-    // { "domain": "git.netcracker.com", "type": "GitLab" },
-    { "domain": "github.com", "type": "GitHub" },
+    { "domain": "git.netcracker.com", "type": "GitLab" },
+    { "domain": "github.com", "type": "GitHub" }
   ],
-  "gitlens.blame.format": "${author|12} ${agoOrDate|8-}",
-  "gitlens.blame.fontSize": 11,
-  "launch": {
-    "configurations": [],
-    "compounds": [],
+  // "files.autoSave": "afterDelay",
+  // "files.autoSaveDelay": 1000,
+  "files.associations": {
+    "**/CODEOWNERS": "plaintext",
+    "**/.gitlab/CODEOWNERS": "plaintext",
+    "**/.github/CODEOWNERS": "plaintext",
+    "**/.continue/*.yaml": "yaml",
+    "**/.continue/*.yml": "yaml"
   },
-  "continue.enableTabAutocomplete": true,
-  // "continue.enableTabAutocompleteInMarkdown": true,
-  // "continue.tabAutocompleteBehavior": "always",
-  // "continue.tabAutocompleteInMarkdownBehavior": "always",
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 500,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "claudeCode.environmentVariables": [],
+  "gitlens.blame.compact": false,
+  "gitlens.blame.avatars": false,
+
+
+  "gitlens.blame.dateFormat": "DD.MM.YY",
+  "gitlens.blame.format": "${agoOrDate|8} ${author|10-}",
+
+
+  "gitlens.blame.fontWeight": "normal",
+  "gitlens.blame.fontStyle": "normal",
+
+
+  "gitlens.blame.heatmap.enabled": false,
+  "gitlens.blame.separateLines": true,
+  "gitlens.blame.fontSize": 10.5,
+  "diffEditor.ignoreTrimWhitespace": false
 }
