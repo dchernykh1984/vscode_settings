@@ -32,6 +32,9 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-containers"
   },
+  "[xml]": {
+    "editor.wordWrap": "on"
+  },
   "gitlens.remotes": [{ "domain": "github.com", "type": "GitHub" }],
 
   "files.associations": {
@@ -39,7 +42,8 @@
     "**/.gitlab/CODEOWNERS": "plaintext",
     "**/.github/CODEOWNERS": "plaintext",
     "**/.continue/*.yaml": "yaml",
-    "**/.continue/*.yml": "yaml"
+    "**/.continue/*.yml": "yaml",
+    "*.gpx": "xml"
   },
   "git.confirmSync": false,
   "git.ignoreRebaseWarning": true,
